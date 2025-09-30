@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog Saya</title>
+    <style>
+        :root { --max: 980px; --text: #111; --muted: #666; --link: #1a73e8; }
+        * { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text);
+            line-height: 1.6;
+            background: #fff;
+        }
+        header {
+            border-bottom: 1px solid #ddd;
+            padding: 24px 16px 12px;
+            text-align: center;
+        }
+        h1 { margin: 0 0 8px; font-size: 34px; }
+        nav { display: inline-flex; gap: 24px; font-weight: 600; }
+        nav a { color: #333; text-decoration: none; }
+        nav a:hover { color: var(--link); text-decoration: underline; }
+        main { max-width: var(--max); margin: 0 auto; padding: 24px 16px 64px; }
+        section { margin: 32px 0 56px; }
+        h2 { text-align: center; margin: 0 0 16px; }
+        p { margin: 0 0 14px; text-align: justify; }
+        .back-top { display: block; text-align: center; margin-top: 12px; }
+        table { width: 100%; border-collapse: collapse; margin: 12px 0 4px; }
+        th, td { border-bottom: 1px solid #e5e5e5; padding: 10px 12px; text-align: left; }
+        th { background: #fafafa; }
+        .gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; max-width: 960px; margin: 0 auto; }
+        .card { border: 1px solid #e5e5e5; height: 300px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+        .card img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .caption { text-align: center; margin: 6px 0 0; color: #444; font-weight: 600; }
+        .source { text-align: center; margin-top: 8px; }
+        form { max-width: 520px; margin: 20px auto; display: grid; grid-template-columns: 100px 1fr; gap: 10px 12px; align-items: center; }
+        input[type="text"], input[type="email"] { width: 100%; padding: 8px 10px; border: 1px solid #cfcfcf; border-radius: 4px; }
+        button { grid-column: 2 / 3; padding: 8px 14px; border: 1px solid #cfcfcf; border-radius: 16px; background: #f4f4f4; cursor: pointer; }
+        button:hover { background: #eee; }
+        footer { border-top: 1px solid #ddd; padding: 14px 16px; color: #444; font-size: 14px; max-width: var(--max); margin: 32px auto 0; }
+        .center { text-align: center; }
+        @media (max-width: 700px) {
+            nav { gap: 14px; flex-wrap: wrap; justify-content: center; }
+            .gallery { grid-template-columns: 1fr; }
+            form { grid-template-columns: 1fr; }
+            form label { display: block; }
+            button { grid-column: 1 / -1; }
+        }
+    </style>
+</head>
+<body>
+    <a id="atas" aria-hidden="true"></a>
+    <header>
+        <h1>Blog Saya</h1>
+        <nav aria-label="Navigasi Utama">
+            <a href="#profil">Profil</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#karir">Karir</a>
+            <a href="#galeri">Galeri</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profil" aria-labelledby="profil-title">
+            <h2 id="profil-title">Profil, Kepribadian Diri dan Deskripsi Sifat</h2>
+            <p>
+                Saya Muhammad Akhtar Behnam Putra, seorang mahasiswa S1 Sistem Informasi Universitas Dian Nuswantoro yang berasal dari Semarang.
+                Saya memiliki rencana karir untuk menjadi developer setelah lulus S1 dan juga berminat membangun bisnis warung kopi.
+                Dengan hobi membaca buku, bermain game, saya menunjukkan minat yang seimbang antara teknologi dan kuliner.
+                Sebagai seorang yang memiliki kemampuan beradaptasi dengan lingkungan sosial, saya tetap mampu menjaga hubungan sosial
+                dengan baik meskipun lebih nyaman dalam interaksi lingkaran kecil.
+            </p>
+            <p>
+                Secara umum, saya seorang yang pendiam, cuek, dan tidak peduli dengan urusan orang lain. Saya orang yang cenderung mengikuti
+                alur yang ada dan juga mampu menjaga hubungan sosial dengan baik.
+            </p>
+            <p>
+                Saya menganalisa diri saya memiliki kecenderungan sifat tenang dengan sisi sekunder ambisius. Hal ini berarti saya lebih sering
+                menunjukkan sikap tenang, dan damai, namun tetap memiliki sisi ramah, hangat, ambisius, dan mudah bersosial. Tetapi saya juga suka
+                menunda-nunda pekerjaan, kurang motivasi untuk melakukan sesuatu, dan cepat bosan.
+            </p>
+            <p>
+                Saya juga cenderung memiliki sifat ambivert, karena saya lebih nyaman ketika melakukan kegiatan yang tenang dan personal terkadang introvert kadang juga introvert,
+                saya juga lebih suka interaksi dalam lingkaran kecil (3-5 orang). Meskipun dalam situasi tertentu saya mampu menyesuaikan diri
+                untuk bersosial dan beradaptasi dengan lingkungan.
+            </p>
+            <a class="back-top" href="#atas">Kembali ke Atas</a>
+        </section>
+
+        <section id="pendidikan" aria-labelledby="pendidikan-title">
+            <h2 id="pendidikan-title">Riwayat Pendidikan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th style="width:80px">No</th>
+                        <th>Jenjang</th>
+                        <th>Nama Sekolah</th>
+                        <th style="width:120px">Lulus</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>SD</td>
+                        <td>SD BUQ Betengan Demak</td>
+                        <td>2017</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>MTS</td>
+                        <td>MTS Tahfidz Yanbu'ul Qur'an Menawan Kudus</td>
+                        <td>2021</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>MAN</td>
+                        <td>MAN Demak</td>
+                        <td>2024</td>
+                    </tr>
+                </tbody>
+            </table>
+            <a class="back-top" href="#atas">Kembali ke Atas</a>
+        </section>
+
+        <section id="karir" aria-labelledby="karir-title">
+            <h2 id="karir-title">Karir</h2>
+            <p class="center">saya ingin memiliki karir sebagai Trader setelah lulus S1</p>
+            <p>Saya juga ingin membangun Apartment untuk perusahaan</p>
+        </section>
+
+        <section id="galeri" aria-labelledby="galeri-title">
+            <h2 id="galeri-title">Galeri</h2>
+            <div class="gallery" role="list">
+                <figure class="item" role="listitem">
+                    <div class="card">
+                        <img src="image/trader.jpg" alt="Grafik trading saham di layar" onerror="if(!this.dataset.fallback){this.dataset.fallback='1';this.src='https://source.unsplash.com/featured/1200x800?stock,chart,finance';}else{this.onerror=null;this.src='https://picsum.photos/seed/trader-chart/1200/800';}">
+                    </div>
+                    <figcaption class="caption">Foto 1 — Trader / Pasar Saham</figcaption>
+                </figure>
+                <figure class="item" role="listitem">
+                    <div class="card">
+                        <img src="https://images.unsplash.com/photo-1501183638710-841dd1904471?w=1200&auto=format&fit=crop&q=60" alt="Gedung apartemen modern">
+                    </div>
+                    <figcaption class="caption">Foto 2 — Apartemen / Bisnis Properti</figcaption>
+                </figure>
+            </div>
+            <div class="source">
+                Sumber :
+                <a href="https://unsplash.com" target="_blank" rel="noreferrer noopener">Foto 1</a>
+                <span> | </span>
+                <a href="https://unsplash.com" target="_blank" rel="noreferrer noopener">Foto 2</a>
+            </div>
+            <a class="back-top" href="#atas">Kembali ke Atas</a>
+        </section>
+
+        <section id="form" aria-labelledby="form-title">
+            <h2 id="form-title" class="center">Silahkan isi data Anda di sini</h2>
+            <form onsubmit="event.preventDefault(); alert('Terima kasih!');">
+                <label for="nama">Nama :</label>
+                <input id="nama" name="nama" type="text" required>
+                <label for="email">email :</label>
+                <input id="email" name="email" type="email" required>
+                <button type="submit">Kirim</button>
+            </form>
+        </section>
+
+        <section id="hobi" aria-labelledby="hobi-title">
+            <h2 id="hobi-title" class="center">Hobi</h2>
+            <p class="center">saya memiliki beberapa hobi diantaranya membaca buku, bermain game</p>
+        </section>
+    </main>
+
+    <footer>
+        <small>© 2025 - Biografi Singkat Muhammad Akhtar Behnam Putra</small>
+    </footer>
+</body>
+</html>
+
+
